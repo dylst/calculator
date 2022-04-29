@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Inconsolata:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgba(2, 47, 114, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Inconsolata", monospace;
+}
+
+.calc-container {
+  background: rgba(228, 228, 228, 0.8);
+  box-shadow: 0px 0px 10px 5px rgba(12, 38, 48, 0.32);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 10px;
+  height: 70vh;
+}
+
+.display {
+  height: 20vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.prev {
+  height: 5vh;
+}
+
+h1 {
+  font-size: 8vh;
+}
+
+p {
+  font-size: 3vh;
+}
+
+.buttons-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(6, auto);
+  gap: 5px;
+}
+
+.btn {
+  background: rgba(102, 237, 255, 0.5);
+  padding: 2vh 3vw;
+  border: none;
+  border-radius: 3px;
+  font-size: 3vh;
+}
+
+.btn:hover {
+  background: rgba(89, 213, 230, 0.6);
+}
+
+.btn-dark {
+  background: rgba(81, 217, 235, 0.7);
+}
+
+.btn-dark:hover {
+  background: rgba(59, 178, 194, 0.7);
+}
+
+.btn-eq {
+  background: rgb(22, 118, 182);
+  color: white;
+}
+
+.btn-eq:hover {
+  background: rgb(54, 160, 231);
+}
